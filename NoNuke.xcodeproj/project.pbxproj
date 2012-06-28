@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAA56AC2159BF9B7007EEEC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA56AC1159BF9B7007EEEC2 /* UIKit.framework */; };
+		DAA56AC4159BF9B7007EEEC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA56AC3159BF9B7007EEEC2 /* Foundation.framework */; };
+		DAA56AC6159BF9B7007EEEC2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA56AC5159BF9B7007EEEC2 /* CoreGraphics.framework */; };
+		DAA56ACC159BF9B7007EEEC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DAA56ACA159BF9B7007EEEC2 /* InfoPlist.strings */; };
+		DAA56ACE159BF9B7007EEEC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA56ACD159BF9B7007EEEC2 /* main.m */; };
+		DAA56AD2159BF9B7007EEEC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA56AD1159BF9B7007EEEC2 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DAA56ABD159BF9B7007EEEC2 /* NoNuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoNuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA56AC1159BF9B7007EEEC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DAA56AC3159BF9B7007EEEC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAA56AC5159BF9B7007EEEC2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DAA56AC9159BF9B7007EEEC2 /* NoNuke-Info.plist */ = {isa = PBXFileReference; path = "NoNuke-Info.plist"; sourceTree = "<group>"; };
+		DAA56ACB159BF9B7007EEEC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DAA56ACD159BF9B7007EEEC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAA56ACF159BF9B7007EEEC2 /* NoNuke-Prefix.pch */ = {isa = PBXFileReference; path = "NoNuke-Prefix.pch"; sourceTree = "<group>"; };
+		DAA56AD0159BF9B7007EEEC2 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAA56AD1159BF9B7007EEEC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA56ABA159BF9B7007EEEC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA56AC2159BF9B7007EEEC2 /* UIKit.framework in Frameworks */,
+				DAA56AC4159BF9B7007EEEC2 /* Foundation.framework in Frameworks */,
+				DAA56AC6159BF9B7007EEEC2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA56AB2159BF9B7007EEEC2 = {
+			isa = PBXGroup;
+			children = (
+				DAA56AC7159BF9B7007EEEC2 /* NoNuke */,
+				DAA56AC0159BF9B7007EEEC2 /* Frameworks */,
+				DAA56ABE159BF9B7007EEEC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA56ABE159BF9B7007EEEC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA56ABD159BF9B7007EEEC2 /* NoNuke.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA56AC0159BF9B7007EEEC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA56AC1159BF9B7007EEEC2 /* UIKit.framework */,
+				DAA56AC3159BF9B7007EEEC2 /* Foundation.framework */,
+				DAA56AC5159BF9B7007EEEC2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAA56AC7159BF9B7007EEEC2 /* NoNuke */ = {
+			isa = PBXGroup;
+			children = (
+				DAA56AD0159BF9B7007EEEC2 /* AppDelegate.h */,
+				DAA56AD1159BF9B7007EEEC2 /* AppDelegate.m */,
+				DAA56AC8159BF9B7007EEEC2 /* Supporting Files */,
+			);
+			path = NoNuke;
+			sourceTree = "<group>";
+		};
+		DAA56AC8159BF9B7007EEEC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA56AC9159BF9B7007EEEC2 /* NoNuke-Info.plist */,
+				DAA56ACA159BF9B7007EEEC2 /* InfoPlist.strings */,
+				DAA56ACD159BF9B7007EEEC2 /* main.m */,
+				DAA56ACF159BF9B7007EEEC2 /* NoNuke-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA56ABC159BF9B7007EEEC2 /* NoNuke */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA56AD5159BF9B7007EEEC2 /* Build configuration list for PBXNativeTarget "NoNuke" */;
+			buildPhases = (
+				DAA56AB9159BF9B7007EEEC2 /* Sources */,
+				DAA56ABA159BF9B7007EEEC2 /* Frameworks */,
+				DAA56ABB159BF9B7007EEEC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoNuke;
+			productName = NoNuke;
+			productReference = DAA56ABD159BF9B7007EEEC2 /* NoNuke.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA56AB4159BF9B7007EEEC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Prodisky;
+			};
+			buildConfigurationList = DAA56AB7159BF9B7007EEEC2 /* Build configuration list for PBXProject "NoNuke" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DAA56AB2159BF9B7007EEEC2;
+			productRefGroup = DAA56ABE159BF9B7007EEEC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA56ABC159BF9B7007EEEC2 /* NoNuke */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA56ABB159BF9B7007EEEC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA56ACC159BF9B7007EEEC2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA56AB9159BF9B7007EEEC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA56ACE159BF9B7007EEEC2 /* main.m in Sources */,
+				DAA56AD2159BF9B7007EEEC2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DAA56ACA159BF9B7007EEEC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA56ACB159BF9B7007EEEC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA56AD3159BF9B7007EEEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAA56AD4159BF9B7007EEEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAA56AD6159BF9B7007EEEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoNuke/NoNuke-Prefix.pch";
+				INFOPLIST_FILE = "NoNuke/NoNuke-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DAA56AD7159BF9B7007EEEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NoNuke/NoNuke-Prefix.pch";
+				INFOPLIST_FILE = "NoNuke/NoNuke-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA56AB7159BF9B7007EEEC2 /* Build configuration list for PBXProject "NoNuke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA56AD3159BF9B7007EEEC2 /* Debug */,
+				DAA56AD4159BF9B7007EEEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA56AD5159BF9B7007EEEC2 /* Build configuration list for PBXNativeTarget "NoNuke" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA56AD6159BF9B7007EEEC2 /* Debug */,
+				DAA56AD7159BF9B7007EEEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAA56AB4159BF9B7007EEEC2 /* Project object */;
+}
