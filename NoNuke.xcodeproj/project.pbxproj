@@ -22,8 +22,6 @@
 		DAA56ADB159BFA2E007EEEC2 /* Icon-iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA56ADA159BFA2E007EEEC2 /* Icon-iPhone@2x.png */; };
 		DAA56AEA159BFC73007EEEC2 /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA56AE9159BFC73007EEEC2 /* ARViewController.m */; };
 		DAA56AF9159C0643007EEEC2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA56AF8159C0643007EEEC2 /* QuartzCore.framework */; };
-		DAA56B06159C069E007EEEC2 /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA56B03159C069E007EEEC2 /* AwesomeMenu.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		DAA56B07159C069E007EEEC2 /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA56B05159C069E007EEEC2 /* AwesomeMenuItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		DAA56B1B159C0805007EEEC2 /* bg-menuitem-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA56B0D159C0804007EEEC2 /* bg-menuitem-highlighted.png */; };
 		DAA56B1C159C0805007EEEC2 /* bg-menuitem-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA56B0E159C0804007EEEC2 /* bg-menuitem-highlighted@2x.png */; };
 		DAA56B1D159C0805007EEEC2 /* bg-menuitem.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA56B0F159C0804007EEEC2 /* bg-menuitem.png */; };
@@ -39,6 +37,8 @@
 		DAA56B43159C1D91007EEEC2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA56B42159C1D91007EEEC2 /* CoreLocation.framework */; };
 		DACA9FDA159C2A6500AAEBDC /* Nuke.png in Resources */ = {isa = PBXBuildFile; fileRef = DACA9FD8159C2A6500AAEBDC /* Nuke.png */; };
 		DACA9FDB159C2A6500AAEBDC /* Nuke@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DACA9FD9159C2A6500AAEBDC /* Nuke@2x.png */; };
+		DADF667115D325660059ADEB /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF667015D325660059ADEB /* AwesomeMenu.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DADF667415D325970059ADEB /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DADF667315D325970059ADEB /* AwesomeMenuItem.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,10 +63,6 @@
 		DAA56AE8159BFC73007EEEC2 /* ARViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
 		DAA56AE9159BFC73007EEEC2 /* ARViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
 		DAA56AF8159C0643007EEEC2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		DAA56B02159C069E007EEEC2 /* AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenu.h; sourceTree = "<group>"; };
-		DAA56B03159C069E007EEEC2 /* AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenu.m; sourceTree = "<group>"; };
-		DAA56B04159C069E007EEEC2 /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuItem.h; sourceTree = "<group>"; };
-		DAA56B05159C069E007EEEC2 /* AwesomeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuItem.m; sourceTree = "<group>"; };
 		DAA56B0D159C0804007EEEC2 /* bg-menuitem-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted.png"; sourceTree = "<group>"; };
 		DAA56B0E159C0804007EEEC2 /* bg-menuitem-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem-highlighted@2x.png"; sourceTree = "<group>"; };
 		DAA56B0F159C0804007EEEC2 /* bg-menuitem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-menuitem.png"; sourceTree = "<group>"; };
@@ -82,6 +78,10 @@
 		DAA56B42159C1D91007EEEC2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DACA9FD8159C2A6500AAEBDC /* Nuke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nuke.png; sourceTree = "<group>"; };
 		DACA9FD9159C2A6500AAEBDC /* Nuke@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nuke@2x.png"; sourceTree = "<group>"; };
+		DADF666F15D325660059ADEB /* AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenu.h; sourceTree = "<group>"; };
+		DADF667015D325660059ADEB /* AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenu.m; sourceTree = "<group>"; };
+		DADF667215D325970059ADEB /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuItem.h; sourceTree = "<group>"; };
+		DADF667315D325970059ADEB /* AwesomeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +101,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA8E94DD15D324C400A8BE24 /* AwesomeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DADF666F15D325660059ADEB /* AwesomeMenu.h */,
+				DADF667015D325660059ADEB /* AwesomeMenu.m */,
+				DADF667215D325970059ADEB /* AwesomeMenuItem.h */,
+				DADF667315D325970059ADEB /* AwesomeMenuItem.m */,
+			);
+			name = AwesomeMenu;
+			sourceTree = "<group>";
+		};
 		DAA56AB2159BF9B7007EEEC2 = {
 			isa = PBXGroup;
 			children = (
 				DAA56ADA159BFA2E007EEEC2 /* Icon-iPhone@2x.png */,
 				DAA56AD8159BFA2B007EEEC2 /* Icon-iPhone.png */,
-				DAA56B01159C069E007EEEC2 /* AwesomeMenu */,
 				DAA56AC7159BF9B7007EEEC2 /* NoNuke */,
 				DAA56AC0159BF9B7007EEEC2 /* Frameworks */,
 				DAA56ABE159BF9B7007EEEC2 /* Products */,
@@ -137,6 +147,7 @@
 		DAA56AC7159BF9B7007EEEC2 /* NoNuke */ = {
 			isa = PBXGroup;
 			children = (
+				DA8E94DD15D324C400A8BE24 /* AwesomeMenu */,
 				DAA56B25159C080E007EEEC2 /* Images */,
 				DAA56AD0159BF9B7007EEEC2 /* AppDelegate.h */,
 				DAA56AD1159BF9B7007EEEC2 /* AppDelegate.m */,
@@ -157,18 +168,6 @@
 				DAA56ACD159BF9B7007EEEC2 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DAA56B01159C069E007EEEC2 /* AwesomeMenu */ = {
-			isa = PBXGroup;
-			children = (
-				DAA56B02159C069E007EEEC2 /* AwesomeMenu.h */,
-				DAA56B03159C069E007EEEC2 /* AwesomeMenu.m */,
-				DAA56B04159C069E007EEEC2 /* AwesomeMenuItem.h */,
-				DAA56B05159C069E007EEEC2 /* AwesomeMenuItem.m */,
-			);
-			name = AwesomeMenu;
-			path = ../../../SDK/AwesomeMenu;
 			sourceTree = "<group>";
 		};
 		DAA56B25159C080E007EEEC2 /* Images */ = {
@@ -280,9 +279,9 @@
 				DAA56ACE159BF9B7007EEEC2 /* main.m in Sources */,
 				DAA56AD2159BF9B7007EEEC2 /* AppDelegate.m in Sources */,
 				DAA56AEA159BFC73007EEEC2 /* ARViewController.m in Sources */,
-				DAA56B06159C069E007EEEC2 /* AwesomeMenu.m in Sources */,
-				DAA56B07159C069E007EEEC2 /* AwesomeMenuItem.m in Sources */,
 				DA4A7E6E159C566400198696 /* NukeView.m in Sources */,
+				DADF667115D325660059ADEB /* AwesomeMenu.m in Sources */,
+				DADF667415D325970059ADEB /* AwesomeMenuItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
