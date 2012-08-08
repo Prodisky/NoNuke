@@ -14,7 +14,6 @@
 	UILabel *runawayLabel;
 	CLLocationManager *locationManager;
 	UIImagePickerController *imagePicker;
-	//NukeView *n0;
 	NukeView *n1, *n2, *n3, *n4;
 	CLLocation *currentLocation;
 	CGFloat magneticHeading;
@@ -33,7 +32,6 @@
 - (void)updateInfo {
 	if (currentLocation == nil) return;
 	[UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^ {
-		//[n0 renew:rotationAngle :magneticHeading :currentLocation];
 		[n1 renew:rotationAngle :magneticHeading :currentLocation];
 		[n2 renew:rotationAngle :magneticHeading :currentLocation];
 		[n3 renew:rotationAngle :magneticHeading :currentLocation];
@@ -58,6 +56,7 @@
 			
 			CGFloat angle = atan2(location.coordinate.latitude - currentLocation.coordinate.latitude, location.coordinate.longitude - currentLocation.coordinate.longitude);
 			
+			//*
 			CGFloat heading = - magneticHeading * M_PI / 180 - angle;
 			heading += M_PI / 2;
 			heading += M_PI;
@@ -68,6 +67,10 @@
 			CGFloat pointX = 160;
 			if (cos(heading) < 0) pointX = 480;
 			else pointX += sin(heading) * 320;
+			//*/
+			//CGFloat heading = -(magneticHeading * M_PI / 180) + angle;
+			//CGFloat pointX = -160 + atan(heading) * 320;
+			//while (pointX > 480) pointX -= 640;
 			
 			runawayLabel.center = CGPointMake(pointX, 240 - sin(rotationAngle) * 480);
 		}
@@ -103,10 +106,7 @@
 		[self.view addSubview:runawayLabel];
 		
 		
-		/*//破
-		n0 = [NukeView new];
-		n0.name = NSLocalizedString(@"破",nil);
-		n0.location = [[CLLocation alloc] initWithLatitude:24.169681 longitude:120.658773];//*/
+		//破	24.169681 120.658773
 		
 		//核一廠
 		n1 = [NukeView new];
@@ -128,13 +128,11 @@
 		n4.name = NSLocalizedString(@"核四廠",nil);
 		n4.location = [[CLLocation alloc] initWithLatitude:25.126156 longitude:121.817619];
 		
-		//n0.offsetY = 104;
 		n1.offsetY = -52;
 		n2.offsetY = 0;
 		n3.offsetY = 0;
 		n4.offsetY = 52;
 		
-		//[self.view addSubview:n0];
 		[self.view addSubview:n1];
 		[self.view addSubview:n2];
 		[self.view addSubview:n3];

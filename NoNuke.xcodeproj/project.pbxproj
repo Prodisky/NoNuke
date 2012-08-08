@@ -349,11 +349,13 @@
 		DAA56AD7159BF9B7007EEEC2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Prodisky Inc";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NoNuke/NoNuke-Prefix.pch";
 				INFOPLIST_FILE = "NoNuke/NoNuke-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0C1201E1-6B28-4AF2-8EB0-AB9D2E240F70";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
