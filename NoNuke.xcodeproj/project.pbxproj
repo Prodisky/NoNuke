@@ -11,6 +11,7 @@
 		DA2B9BFF159C9E9400908B10 /* Icon-x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA2B9BFD159C9E9400908B10 /* Icon-x@2x.png */; };
 		DA4A7E6A159C4E3D00198696 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4A7E69159C4E3D00198696 /* CoreMotion.framework */; };
 		DA4A7E6E159C566400198696 /* NukeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4A7E6D159C566400198696 /* NukeView.m */; };
+		DA75197516F720880005BE58 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA75197416F720880005BE58 /* Default-568h@2x.png */; };
 		DA98D3D6159C751900034294 /* Compass.png in Resources */ = {isa = PBXBuildFile; fileRef = DA98D3D4159C751900034294 /* Compass.png */; };
 		DA98D3D7159C751900034294 /* Compass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA98D3D5159C751900034294 /* Compass@2x.png */; };
 		DAA56AC2159BF9B7007EEEC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA56AC1159BF9B7007EEEC2 /* UIKit.framework */; };
@@ -47,6 +48,7 @@
 		DA4A7E69159C4E3D00198696 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		DA4A7E6C159C566400198696 /* NukeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NukeView.h; sourceTree = "<group>"; };
 		DA4A7E6D159C566400198696 /* NukeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NukeView.m; sourceTree = "<group>"; };
+		DA75197416F720880005BE58 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DA98D3D4159C751900034294 /* Compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Compass.png; sourceTree = "<group>"; };
 		DA98D3D5159C751900034294 /* Compass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Compass@2x.png"; sourceTree = "<group>"; };
 		DAA56ABD159BF9B7007EEEC2 /* NoNuke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoNuke.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 		DAA56AB2159BF9B7007EEEC2 = {
 			isa = PBXGroup;
 			children = (
+				DA75197416F720880005BE58 /* Default-568h@2x.png */,
 				DAA56ADA159BFA2E007EEEC2 /* Icon-iPhone@2x.png */,
 				DAA56AD8159BFA2B007EEEC2 /* Icon-iPhone.png */,
 				DAA56AC7159BF9B7007EEEC2 /* NoNuke */,
@@ -221,7 +224,7 @@
 		DAA56AB4159BF9B7007EEEC2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = Prodisky;
 			};
 			buildConfigurationList = DAA56AB7159BF9B7007EEEC2 /* Build configuration list for PBXProject "NoNuke" */;
@@ -266,6 +269,7 @@
 				DA98D3D7159C751900034294 /* Compass@2x.png in Resources */,
 				DA2B9BFE159C9E9400908B10 /* Icon-x.png in Resources */,
 				DA2B9BFF159C9E9400908B10 /* Icon-x@2x.png in Resources */,
+				DA75197516F720880005BE58 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +298,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -319,6 +327,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -354,7 +366,7 @@
 				INFOPLIST_FILE = "NoNuke/NoNuke-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "0C1201E1-6B28-4AF2-8EB0-AB9D2E240F70";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CD423883-0026-4B08-91D6-8A125E9EC329";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

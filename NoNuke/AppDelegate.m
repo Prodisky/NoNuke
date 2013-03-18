@@ -45,7 +45,8 @@
 	
 	menu.rotateAngle = -M_PI / 2 + M_PI / 2 / [menus count];
 	menu.menuWholeAngle = M_PI;
-	menu.startPoint = CGPointMake(160, 450);
+	
+	menu.startPoint = CGPointMake(160, [[UIScreen mainScreen] bounds].size.height - 30);
 	
 	menu.delegate = self;
 	[self.window addSubview:menu];

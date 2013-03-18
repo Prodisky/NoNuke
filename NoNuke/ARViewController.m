@@ -25,17 +25,26 @@
 
 @implementation ARViewController
 @synthesize nukeStatus;
-- (void)showAlert:(NSString*)title:(NSString*)message {
+- (void)showAlert:(NSString*)title
+		  message:(NSString*)message {
 	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"OK",nil), nil];
 	[alertView show];
 }
 - (void)updateInfo {
 	if (currentLocation == nil) return;
 	[UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionAllowUserInteraction animations:^ {
-		[n1 renew:rotationAngle :magneticHeading :currentLocation];
-		[n2 renew:rotationAngle :magneticHeading :currentLocation];
-		[n3 renew:rotationAngle :magneticHeading :currentLocation];
-		[n4 renew:rotationAngle :magneticHeading :currentLocation];
+		[n1 renewByRotationAngle:rotationAngle
+				 magneticHeading:magneticHeading
+				 currentLocation:currentLocation];
+		[n2 renewByRotationAngle:rotationAngle
+				 magneticHeading:magneticHeading
+				 currentLocation:currentLocation];
+		[n3 renewByRotationAngle:rotationAngle
+				 magneticHeading:magneticHeading
+				 currentLocation:currentLocation];
+		[n4 renewByRotationAngle:rotationAngle
+				 magneticHeading:magneticHeading
+				 currentLocation:currentLocation];
 		
 		if (nukeStatus != NukeStatusNone) {
 			CLLocation *location;
@@ -174,7 +183,8 @@
         imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
         imagePicker.showsCameraControls = NO;
         imagePicker.cameraOverlayView = self.view;
-		imagePicker.cameraViewTransform = CGAffineTransformMakeScale(1.25,1.25);
+		CGFloat scal = [[UIScreen mainScreen] bounds].size.height / 384;
+		imagePicker.cameraViewTransform = CGAffineTransformMakeScale(scal, scal);
 		[self presentModalViewController:imagePicker animated:NO];
 	}
 }
@@ -231,7 +241,8 @@
 }
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
 	if ([CLLocationManager authorizationStatus]!=kCLAuthorizationStatusAuthorized) {
-		[self showAlert:NSLocalizedString(@"Can't get current location",nil) :NSLocalizedString(@"Please check your settings for location services",nil)];
+		[self showAlert:NSLocalizedString(@"Can't get current location",nil)
+				message:NSLocalizedString(@"Please check your settings for location services",nil)];
 		[manager stopUpdatingLocation];
 	}
 }

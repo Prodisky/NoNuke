@@ -58,7 +58,9 @@
 	nameLabel.text = name;
 }
 #pragma mark
-- (void)renew:(CGFloat)rotationAngle:(CGFloat)magneticHeading:(CLLocation *)currentLocation {
+- (void)renewByRotationAngle:(CGFloat)rotationAngle
+			 magneticHeading:(CGFloat)magneticHeading
+			 currentLocation:(CLLocation *)currentLocation {
 	CGFloat angle = atan2(self.location.coordinate.latitude - currentLocation.coordinate.latitude, self.location.coordinate.longitude - currentLocation.coordinate.longitude);
 	
 	CGFloat heading = - magneticHeading * M_PI / 180 - angle;
@@ -71,7 +73,7 @@
 	if (cos(heading) < 0) pointX = 480;
 	else pointX += sin(heading) * 320;
 
-	self.center = CGPointMake(pointX, offsetY + 240 - sin(rotationAngle) * 480);
+	self.center = CGPointMake(pointX, offsetY + ([[UIScreen mainScreen] bounds].size.height / 2) - sin(rotationAngle) * 480);
 	
 	infoLabel.text = [NSString stringWithFormat:@"距離：%0.2f公里", [currentLocation distanceFromLocation:self.location]/1000];
 }

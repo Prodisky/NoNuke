@@ -12,5 +12,7 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) CLLocation *location;
 @property (nonatomic) CGFloat offsetY;
-- (void)renew:(CGFloat)rotationAngle:(CGFloat)magneticHeading:(CLLocation *)currentLocation;
+- (void)renewByRotationAngle:(CGFloat)rotationAngle
+			 magneticHeading:(CGFloat)magneticHeading
+			 currentLocation:(CLLocation *)currentLocation;
 @end
